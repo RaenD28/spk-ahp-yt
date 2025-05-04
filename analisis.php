@@ -90,6 +90,7 @@ while ($row = $result->fetch_assoc()) {
         </table> <br>
         <div class="hitung-container">
             <button class="hitung-ahp" onclick="hitungAHP()">Hitung AHP</button>
+            <button class="hitung-ahp" id="resetButton">Reset perhitungan</button>
         </div>
 
         <div id="hasil"></div>

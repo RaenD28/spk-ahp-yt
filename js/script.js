@@ -181,6 +181,20 @@ function clearStorage() {
   }
 }
 
+document.addEventListener("DOMContentLoaded", (event) => {
+  // Pastikan tabel sudah ter-generate sebelum load
+  loadDataFromStorage();
+
+  // --- TAMBAHKAN INI ---
+  // Cari tombol reset berdasarkan ID dan tambahkan event listener
+  const resetButton = document.getElementById("resetButton");
+  if (resetButton) {
+    resetButton.addEventListener("click", clearStorage);
+  } else {
+    console.warn("Tombol reset dengan id 'resetButton' tidak ditemukan.");
+  }
+});
+
 // --- Modifikasi Pembuatan Tabel ---
 
 // Buat header matriks kriteria
