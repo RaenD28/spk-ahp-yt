@@ -1,0 +1,124 @@
+.login-page {
+  position: relative;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.login-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: -10;
+}
+
+.login-form {
+  position: relative;
+  background-color: hsla(0, 0%, 7%, 0.3);
+  color: white;
+  width: 30%;
+  min-width: 350px;
+  border: 2px solid white;
+  padding: 3rem 2rem;
+  border-radius: 1rem;
+  backdrop-filter: blur(15px);
+}
+
+.login-title {
+  margin: 0 0 2rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.login-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.login-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: hsla(0, 0%, 100%, 0.25);
+  border: 2px solid white;
+  color: white;
+  font-size: 1rem;
+}
+
+.login-button {
+  width: 100%;
+  font-size: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  z-index: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.login-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: white;
+  z-index: -1;
+  transition: 0.4s;
+}
+
+.login-button:hover::before {
+  width: 100%;
+}
+
+.login-button:hover {
+  color: var(--text-dark);
+}
+
+.to-regist {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.span-regist {
+  color: white;
+  font-weight: bold;
+}
+
+.span-regist:visited {
+  color: white;
+}
+
+.regist-a {
+  color: white;
+  text-decoration: none;
+}
+
+.regist-a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.regist-a:visited {
+  color: white;
+}
+
+.login-message {
+  font-weight: bold;
+}

@@ -1,0 +1,58 @@
+.dashboard-content {
+  padding: 3rem 10%;
+  color: var(--text-dark);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.welcome-container {
+  margin-top: 2rem;
+}
+
+.welcome {
+  font-size: 2.5rem;
+}
+
+.pengantar-sub {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.pengantar-text {
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+
+.pengantar-list {
+  list-style-type: disc;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+.dashboard-table {
+  width: 80%;
+  margin: 1rem auto 2rem;
+  border-collapse: collapse;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-table th,
+.dashboard-table td {
+  padding: 12px 15px;
+  border: 1px solid #dddddd;
+  text-align: center;
+}
+
+.dashboard-table thead {
+  background-color: var(--secondary);
+  color: white;
+}
+
+.dashboard-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.dashboard-table tbody tr:hover {
+  background-color: #f1f1f1;
+}

@@ -1,0 +1,82 @@
+.perbandingan-kri-content {
+  padding: 3rem 10%;
+}
+
+.perbandingan-kri-title {
+  margin: 2rem 0;
+  font-size: 2rem;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.perbandingan-kri-table {
+  width: 100%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+}
+
+.perbandingan-kri-table th,
+.perbandingan-kri-table td,
+.perbandingan-kri-table input {
+  padding: 12px 15px;
+  border: 1px solid #dddddd;
+  text-align: center;
+}
+
+.perbandingan-kri-table thead {
+  background-color: var(--secondary);
+  color: white;
+}
+
+.perbandingan-kri-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.perbandingan-kri-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.hitung-container {
+  display: flex;
+  justify-content: center;
+}
+
+.hitung-ahp {
+  padding: 1rem 2rem;
+  border: 2px solid var(--secondary);
+  background-color: transparent;
+  color: var(--secondary);
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  z-index: 1;
+  position: relative;
+}
+
+.hitung-ahp::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: var(--secondary);
+  z-index: -1;
+  transition: 0.4s;
+}
+
+.hitung-ahp:hover::before {
+  width: 100%;
+}
+
+.hitung-ahp:hover {
+  color: white;
+}
