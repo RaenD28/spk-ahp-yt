@@ -5,10 +5,6 @@ if (isset($_POST['logout'])) { // jika tombol logout pada form dengan method POS
     session_destroy(); // menghancurkan session yang sudah ada. ini akan menghapus semua data yang ada di session.
     header("Location: index.php"); // redirect ke halaman index.php
 }
-include_once 'service/kriteria-func.php'; // menghubungkan ke database
-// $pro = new Kriteria($db);
-// $stmt = $pro->readAll();
-// $count = $pro->countAll();
 ?>
 
 <!DOCTYPE html>
