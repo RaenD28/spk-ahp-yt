@@ -3,7 +3,9 @@ session_start(); // memulai session untuk menyimpan data sementara di server
 ?>
 <nav class="header">
     <div class="header-logo">
-        <img src="icon/youtube-iconkw.png" alt="Logo" class="header-logo-img">
+        <a href="dashboard.php">
+            <img src="icon/youtube-iconkw.png" alt="Logo" class="header-logo-img">
+        </a>
     </div>
     <div class="header-nav">
         <div class="nav-button">

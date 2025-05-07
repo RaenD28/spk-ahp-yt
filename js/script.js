@@ -133,12 +133,14 @@ function displayResults(resultsData) {
                     )}</p>
                     <p><strong>CI:</strong> ${resultsData.kriteria.CI.toFixed(
                       4
-                    )},<br> CR: ${resultsData.kriteria.CR.toFixed(4)} -
+                    )},<br> <strong> CR: </strong> ${resultsData.kriteria.CR.toFixed(
+      4
+    )} -
                     <span style="color:${
                       resultsData.kriteria.CR < 0.1 ? "green" : "red"
                     }">${
       resultsData.kriteria.CR < 0.1 ? "Konsisten" : "Tidak Konsisten"
-    }</span></p><br>
+    }</span></p><br><br>
                   `;
   } else {
     document.getElementById("hasil").innerHTML = ""; // Kosongkan jika tidak ada data kriteria
@@ -158,7 +160,7 @@ function displayResults(resultsData) {
                             }</td><td>${r.skor.toFixed(4)}</td></tr>`
                         )
                         .join("")}
-                    </table>
+                    </table><br><br>
                   `;
   } else {
     document.getElementById("hasilAlternatif").innerHTML = ""; // Kosongkan jika tidak ada ranking
